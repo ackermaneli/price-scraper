@@ -1,11 +1,11 @@
-# 🛒 Price Scraper & Product Comparison
+# Price Scraper & Product Comparison
 
 This project is a **web scraping tool** that extracts product prices from two websites and compares them.  
 It is designed to scrape data from **The Reject Shop** and **Woolworths**, matching products by name and reporting the price difference.
 
 ---
 
-## 📌 Features
+## Features
 
 - **Phase 1:** Scrapes product details (SKU, name, and price) from **The Reject Shop**.
 - **Phase 2:** Searches for the same product on **Woolworths** and compares prices.
@@ -15,7 +15,7 @@ It is designed to scrape data from **The Reject Shop** and **Woolworths**, match
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 priceScraper/
@@ -38,7 +38,7 @@ priceScraper/
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 ### **🔹 Prerequisites**
 - Python **3.11** (recommended)
@@ -75,7 +75,7 @@ playwright install
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### **Step 1: Add SKUs to `skus.txt`**
 Add a list of SKUs (one per line) that you want to scrape from **The Reject Shop**.
@@ -100,7 +100,7 @@ The script will:
 
 ---
 
-## 📊 Example Output
+## Example Output
 
 ### **🔹 Phase 1 (`phase1_results.json`)**
 ```json
@@ -131,7 +131,7 @@ The script will:
 
 ---
 
-## 🛠️ How It Works
+## How It Works
 
 ### **🔹 Scraper Architecture**
 - **`BaseScraper`** (Parent class):  
@@ -148,7 +148,7 @@ The script will:
 
 ---
 
-## 📝 Notes
+## Notes
 
 - This script is for **educational purposes**.
 - The **website structures** might change over time, requiring updates.
@@ -156,8 +156,8 @@ The script will:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 - **Eli Ackerman**
-- [GitHub Profile](https://github.com/yourgithub)
+
 
