@@ -142,22 +142,22 @@ The script will:
   Searches for the product on **Woolworths** and extracts price.
 
 ### **🔹 Data Extraction & Matching**  
-#### ** Scraping The Reject Shop**
+#### **Scraping The Reject Shop**
 - We fetch the **product page** for each SKU and extract:
   - **Product Name**, **Price**, and **SKU** using **BeautifulSoup**.
 - The data is **saved in JSON format**.
 
-#### ** Searching on Woolworths**
+#### **Searching on Woolworths**
 - Woolworths **does not** provide direct links by SKU, so we **search by product name** instead.
 - The search results contain **multiple product tiles**.
 
-#### ** Extracting Woolworths Data (Playwright)**
+#### **Extracting Woolworths Data (Playwright)**
 - We use **Playwright locators** to extract product **name, price, and URL** from `wc-product-tile` elements.
 
-#### ** Fuzzy Matching for Accurate Comparison**
+#### **Fuzzy Matching for Accurate Comparison**
 - Since product names differ across websites, we use **RapidFuzz** to find the **best match** using WRatio algorithm.
 
-#### ** Saving & Comparing Prices**
+#### **Saving & Comparing Prices**
 - The final output includes:
   - The **Reject Shop product details**.
   - The **best-matched Woolworths product**.
