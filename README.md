@@ -44,12 +44,6 @@ priceScraper/
 - Python **3.11** (recommended)
 - **pip** or **micromamba** for managing dependencies
 - **Google Chrome** or **Firefox** (for Playwright)
-- **Note:** You may encounter **HTTP2 errors** using Chrome.  
-  One way to handle it is by adding this argument:  
-  ```python
-  args=['--disable-http2']
-  ```
-  in the **Playwright `goto` function**.
 
 ---
 
