@@ -1,4 +1,4 @@
-# Price Scraper & Product Comparison
+# Products Scraper & Price Comparison
 
 This project is a **web scraping tool** that extracts product prices from two websites and compares them.  
 It is designed to scrape data from **The Reject Shop** and **Woolworths**, matching products by name and reporting the price difference.
