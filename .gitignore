@@ -1,0 +1,26 @@
+# Visual Studio and VS Code settings
+.vs/
+.vscode/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+notebooks/.ipynb_checkpoints/
+
+# environment folders
+.venv/
+env/
+venv/
+
+# logs and temporary files
+*.log
+*.tmp
+
+# MacOS system files
+.DS_Store
+
+data/

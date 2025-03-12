@@ -1,0 +1,47 @@
+[
+    {
+        "SKU": "30061292",
+        "Product Name The Reject Shop": "Palmolive Shampoo Intensive Coconut Cream 350mL",
+        "Price_RejectShop": "$3.75",
+        "Product Name Woolworths": "Palmolive Shampoo Naturals Intensive Moisture 350ml",
+        "Price_Woolworths": "$3.00",
+        "Price Difference": "$0.75",
+        "Date": "2025-03-12"
+    },
+    {
+        "SKU": "30113527",
+        "Product Name The Reject Shop": "Whiskas Jellymeat 1 year + 400g",
+        "Price_RejectShop": "$2.00",
+        "Product Name Woolworths": "Whiskas 1+ Years Wet Cat Food Lamb Mince 400G Can",
+        "Price_Woolworths": "$2.70",
+        "Price Difference": "$0.70",
+        "Date": "2025-03-12"
+    },
+    {
+        "SKU": "30115549",
+        "Product Name The Reject Shop": "Twisties Party Bag Cheese 270g",
+        "Price_RejectShop": "$3.95",
+        "Product Name Woolworths": "Twisties Cheese Snacks Party Size Bag 270G",
+        "Price_Woolworths": "$4.00",
+        "Price Difference": "$0.05",
+        "Date": "2025-03-12"
+    },
+    {
+        "SKU": "30043588",
+        "Product Name The Reject Shop": "Quilton Aloe Vera Tissue 3ply 95pk",
+        "Price_RejectShop": "$2.50",
+        "Product Name Woolworths": "Quilton 3 Ply Large & Thick Aloe Vera Facial Tissue 72 pack",
+        "Price_Woolworths": "$2.60",
+        "Price Difference": "$0.10",
+        "Date": "2025-03-12"
+    },
+    {
+        "SKU": "30087959",
+        "Product Name The Reject Shop": "Jif Cream Cleanser Lemon 500mL",
+        "Price_RejectShop": "$3.45",
+        "Product Name Woolworths": "Jif Cream Cleanser With Micro Particles Lemon 500mL",
+        "Price_Woolworths": "$4.80",
+        "Price Difference": "$1.35",
+        "Date": "2025-03-12"
+    }
+]
