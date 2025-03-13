@@ -1,17 +1,17 @@
 # Products Scraper & Price Comparison
 
-This project is a **web scraping tool** that extracts product prices from two websites and compares them.  
-It is designed to scrape data from **The Reject Shop** and **Woolworths**, matching products by name and reporting the price difference.
+This project is a web scraping tool that extracts product prices from two websites and compares them.  
+It is designed to scrape data from The Reject Shop and Woolworths, matching products by name and reporting the price difference.
 
 ---
 
 ## Features
 
-- **Phase 1:** Scrapes product details (SKU, name, and price) from **The Reject Shop**.
-- **Phase 2:** Searches for the same product on **Woolworths** and compares prices.
-- Saves results in **JSON format**.
-- Handles **anti-scraping measures** like **randomized user agents**, **retry and reconnect mechanism**, and **delays**.
-- Uses **OOP principles** for modular and reusable code.
+- **Phase 1:** Scrapes product details (SKU, name, and price) from The Reject Shop.
+- **Phase 2:** Searches for the same product on Woolworths and compares prices.
+- Saves results in JSON format**.
+- Handles anti-scraping measures** like randomized user agents**, retry and reconnect mechanism**, and delays**.
+- Uses **OOP principles for modular and reusable code.
 
 ---
 
@@ -41,9 +41,9 @@ priceScraper/
 ## Setup & Installation
 
 ### **🔹 Prerequisites**
-- Python **3.11** (recommended)
-- **pip** or **micromamba** for managing dependencies
-- **Google Chrome** or **Firefox** (for Playwright)
+- Python **3.11 (recommended)
+- **pip** or micromamba** for managing dependencies
+- **Google Chrome or **Firefox (for Playwright)
 
 ---
 
@@ -72,7 +72,7 @@ playwright install
 ## Usage
 
 ### **Step 1: Add SKUs to `skus.txt`**
-Add a list of SKUs (one per line) that you want to scrape from **The Reject Shop**.
+Add a list of SKUs (one per line) that you want to scrape from The Reject Shop**.
 
 Example:
 ```
@@ -129,48 +129,47 @@ The script will:
 
 ### **🔹 Scraper Architecture**
 - **`BaseScraper`** (Parent class):  
-  Handles **Playwright setup**, **fetching pages**, and **user agents**.
+  Handles Playwright setup**, fetching pages**, and user agents**.
 - **`RejectShopScraper`**:  
-  Scrapes product details from **The Reject Shop**.
+  Scrapes product details from The Reject Shop**.
 - **`WoolworthsScraper`**:  
-  Searches for the product on **Woolworths** and extracts price.
+  Searches for the product on Woolworths** and extracts price.
 
 ### **🔹 Data Extraction & Matching**  
 #### **Scraping The Reject Shop**
-- We fetch the **product page** for each SKU and extract:
-  - **Product Name**, **Price**, and **SKU** using **BeautifulSoup**.
-- The data is **saved in JSON format**.
+- We fetch the product page** for each SKU and extract:
+  - Product Name**, Price**, and *SKU** using BeautifulSoup**.
+- The data is saved in JSON format**.
 
 #### **Searching on Woolworths**
-- Woolworths **does not** provide direct links by SKU, so we **search by product name** instead.
-- The search results contain **multiple product tiles**.
+- Woolworths **does not provide direct links by SKU, so we search by product name** instead.
+- The search results contain multiple product tiles**.
 
 #### **Extracting Woolworths Data (Playwright)**
-- We use **Playwright locators** to extract product **name, price, and URL** from `wc-product-tile` elements.
+- We use Playwright locators** to extract product name, price, and URL from `wc-product-tile` elements.
 
 #### **Fuzzy Matching for Accurate Comparison**
-- Since product names differ across websites, we use **RapidFuzz** to find the **best match** using WRatio algorithm.
+- Since product names differ across websites, we use RapidFuzz** to find the best match** using WRatio algorithm.
 
-#### **Saving & Comparing Prices**
+#### **Comparing Prices**
 - The final output includes:
-  - The **Reject Shop product details**.
-  - The **best-matched Woolworths product**.
-  - The **price difference**.
-- Data is stored in **JSON format**.
+  - The Reject Shop product details**.
+  - The best-matched Woolworths product**.
+  - The price difference**.
 
 ### **🔹 Anti-Bot Measures**
-- **Random User-Agent** rotation
-- **Delays** between requests
-- **Browser restarts** every few searches  
+- **Random User-Agent rotation
+- **Delays between requests
+- **Browser restarts every few searches  
 
 ---
 
 ## 📝 Notes
-- This script is for **educational purposes**.
-- Website structures may **change over time**, requiring updates.
-- **Respect website terms of service** when scraping.
+- This script is for educational purposes**.
+- Website structures may change over time**, requiring updates.
+- **Respect website terms of service when scraping.
 
 ## Author
-**Eli Ackerman**
+**Eli Ackerman
 
 
